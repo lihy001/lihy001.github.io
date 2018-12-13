@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Ftest%2F2018%2F12%2F01%2Fhello-world.html</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[title]]></title>
+    <url>%2Ftest%2F2016%2F06%2F01%2FCentOS7%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81IP%E5%90%8E%E5%87%BA%E7%8E%B02%E4%B8%AAIP.html</url>
+    <content type="text"><![CDATA[CentOS7配置静态IP后出现2个IP一、问题出现 使用VM装系统CentOS-7-x86_64-Minimal-1804，网络连接方式为桥接方式， 配置/etc/sysconfig/network-script/ifcfg-ens33 1234567891011121314151617181920PROXY_METHOD=noneBROWSER_ONLY=noBOOTPROTO=staticDEFROUTE=yesIPV4_FAILURE_FATAL=noIPV6INIT=noIPV6_AUTOCONF=yesIPV6_DEFROUTE=yesIPV6_FAILURE_FATAL=noIPV6_ADDR_GEN_MODE=stable-privacyNAME=ens33UUID=7437d24d-6261-4669-b966-ac0979ed2038DEVICE=ens33ONBOOT=yesZONE=publicIPADDR0=10.82.17.165GATEWAY=10.82.17.1NETMASK=255.0.0.0DNS1=10.82.1.4DNS2=10.82.1.6 执行ip addr 出现 二、解决问题网络查找，是由于NetWorkManager 和 network同时对网卡作用导致的， 停止NetWorkManager， systemctl stop NetWorkManager 禁止NetWorkManager自启, systemctl disable NetworkManager 执行 ip addr，上图中的ens33只有1个Ip了]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
+      </tags>
+  </entry>
+</search>
